@@ -1,0 +1,334 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : 6 nov. 2024, 11:44:02
+    Author     : edwar
+*/
+/* Estilos generales */
+/* Estilos generales */
+/* Estilos generales */
+/* Estilos generales */
+/* Estilos generales */
+
+
+
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+}
+
+/* Navegación */
+.navbar {
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand img {
+    margin-right: 10px;
+}
+
+.nav-link {
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #1F75FE;
+}
+
+/* Contenedor principal */
+.bigContainer {
+    padding: 2rem;
+    text-align: center;
+}
+
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem 0;
+}
+
+.mainImg {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.allText {
+    max-width: 600px;
+    margin: 0 2rem;
+}
+
+.headingText {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.subHeadingText {
+    font-size: 1.5rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.description {
+    color: #666;
+    font-size: 1rem;
+    margin-top: 1rem;
+}
+
+.explore {
+    margin-top: 1.5rem;
+    padding: 0.5rem 1.5rem;
+    background-color: #1F75FE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.explore:hover {
+    background-color: #45a049;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1.5rem 0;
+    text-align: center;
+    margin-top: auto;
+}
+
+.container__footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.box__footer {
+    flex: 1 1 200px;
+    min-width: 150px;
+    color: #ccc;
+}
+
+.box__footer h2 {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.box__footer a {
+    color: #1F75FE;
+    text-decoration: none;
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.box__footer a:hover {
+    color: #fff;
+}
+
+.logo img {
+    width: 80px;
+}
+
+.terms {
+    color: #999;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+}
+
+.terms img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+/* Copyright */
+.box__copyright {
+    margin-top: 1rem;
+    color: #bbb;
+}
+
+/* Estilos para login y registro adaptables */
+.login-background, .register-background {
+    background-image: url('login1.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container, .register-container {
+    background: rgba(255, 255, 255, 0.5);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow-y: auto; /* Permite desplazamiento en pantallas pequeñas */
+    max-height: 80vh; /* Limita la altura en pantallas pequeñas */
+}
+
+.login-container h2, .register-container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.login-container label, .register-container label {
+    display: block;
+    text-align: left;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.login-container input[type="email"],
+.login-container input[type="password"],
+.register-container input[type="text"],
+.register-container input[type="email"],
+.register-container input[type="password"],
+.register-container input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button, .register-container button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    background-color: #1F75FE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover, .register-container button:hover {
+    background-color: #45a049;
+}
+
+.login-container p a, .register-container p a {
+    color: #1F75FE;
+    text-decoration: none;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 576px) {
+    .login-container, .register-container {
+        padding: 1.5rem;
+        max-width: 90%;
+    }
+}
+
+/* Estilos para la página de Editar Perfil */
+.profile-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 400px;
+    margin: 3rem auto;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-container h2 {
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+.profile-container label {
+    display: block;
+    text-align: left;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.profile-container input[type="text"],
+.profile-container input[type="file"] {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.profile-container button {
+    width: 100%;
+    padding: 0.7rem;
+    margin-top: 1.5rem;
+    background-color: #1F75FE;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.profile-container button:hover {
+    background-color: #45a049;
+}
+
+/* Estilo para sección de contacto y tienda */
+.contact-container, .store-container {
+    padding: 2rem;
+    text-align: center;
+}
+
+.contact-container p a {
+    color: #1F75FE;
+    text-decoration: none;
+}
+
+.contact-container h1 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.store-container .product {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.store-container .product img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.store-container .product button {
+    background-color: #1F75FE;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.store-container .product button:hover {
+    background-color: #45a049;
+}
+
